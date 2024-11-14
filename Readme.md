@@ -2,14 +2,6 @@
 
 An API built with Express and PostgreSQL for managing customers within an inventory system. This application allows you to create, read, update, and delete (CRUD) customer information.
 
-## Features
-
-- Add new customers
-- Retrieve all customers
-- Retrieve a customer by ID
-- Update customer information
-- Delete a customer
-
 ## Technologies Used
 
 - Node.js
