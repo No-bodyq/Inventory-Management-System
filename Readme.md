@@ -35,7 +35,7 @@ Ensure you have the following installed on your machine:
    ```
 
 3. **Setup the postgres database**
-   _Run the SQL commands in schema.sql_
+   **Run the SQL commands in schema.sql**
 
 4. **Configure environment variables**
    Create a .env file in the project root directory with the following variables:
