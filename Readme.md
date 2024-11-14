@@ -34,8 +34,8 @@ Ensure you have the following installed on your machine:
    npm install
    ```
 
-3. **Setup the postgres database**
-   **Run the SQL commands in schema.sql**
+3. **Setup the postgres database:**
+   _Run the SQL commands in schema.sql_
 
 4. **Configure environment variables**
    Create a .env file in the project root directory with the following variables:
