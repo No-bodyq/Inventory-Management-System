@@ -43,18 +43,18 @@ Ensure you have the following installed on your machine:
    ```
 
 3. **Setup the postgres database**
-   Run the SQL commands in schema.sql
+   _Run the SQL commands in schema.sql_
 
 4. **Configure environment variables**
    Create a .env file in the project root directory with the following variables:
 
    ```makefile
     DB_USER=your_db_user
-   DB_HOST=localhost
-   DB_NAME=your_db_name
-   DB_PASS=your_db_password
-   DB_PORT=5432
-   PORT=3000
+    DB_HOST=localhost
+    DB_NAME=your_db_name
+    DB_PASS=your_db_password
+    DB_PORT=5432
+    PORT=3000
    ```
 
 5. **Running the Application**
