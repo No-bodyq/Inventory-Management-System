@@ -1,7 +1,5 @@
 import db from "../config/db.js";
 
-await db.connect();
-
 // Add a new customer
 const addCustomer = async (req, res) => {
   const { name, email, phone, address } = req.body;
