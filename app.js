@@ -8,6 +8,7 @@ import productRouter from "./routes/productRoutes.js";
 
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import categoryRouter from "./routes/categoryRoutes.js";
 
 const __dirname = dirname(dirname(fileURLToPath(import.meta.url)));
 const app = express();
@@ -26,5 +27,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/v1/customer", customerRouter);
 app.use("/api/v1/product", productRouter);
+app.use("/api/v1/category", categoryRouter);
 
 export default app;
