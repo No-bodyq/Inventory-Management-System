@@ -9,6 +9,9 @@ import productRouter from "./routes/productRoutes.js";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import categoryRouter from "./routes/categoryRoutes.js";
+import orderRouter from "./routes/orderRoutes.js";
+import orderItemRouter from "./routes/orderItemRoutes.js";
+import inventoryMovementRouter from "./routes/inventoryMovementRoutes.js";
 
 const __dirname = dirname(dirname(fileURLToPath(import.meta.url)));
 const app = express();
@@ -28,5 +31,8 @@ app.get("/", (req, res) => {
 app.use("/api/v1/customer", customerRouter);
 app.use("/api/v1/product", productRouter);
 app.use("/api/v1/category", categoryRouter);
-
+app.use("/api/v1/supplier", categoryRouter);
+app.use("/api/v1/order", orderRouter);
+app.use("/api/v1/order-item", orderItemRouter);
+app.use("/api/v1/inventory-movement", inventoryMovementRouter);
 export default app;
