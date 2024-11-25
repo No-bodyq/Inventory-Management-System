@@ -1,5 +1,15 @@
 CREATE DATABASE inventory
 
+-- Create Users Table
+CREATE TABLE Users (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password_hash TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
 -- Create Categories Table
 CREATE TABLE Categories (
     category_id SERIAL PRIMARY KEY,

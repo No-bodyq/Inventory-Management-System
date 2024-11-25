@@ -12,6 +12,7 @@ import categoryRouter from "./routes/categoryRoutes.js";
 import orderRouter from "./routes/orderRoutes.js";
 import orderItemRouter from "./routes/orderItemRoutes.js";
 import inventoryMovementRouter from "./routes/inventoryMovementRoutes.js";
+import userRouter from "./routes/userRoutes.js";
 
 const __dirname = dirname(dirname(fileURLToPath(import.meta.url)));
 const app = express();
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
   });
 });
 
+app.use("/api/v1/user", userRouter);
 app.use("/api/v1/customer", customerRouter);
 app.use("/api/v1/product", productRouter);
 app.use("/api/v1/category", categoryRouter);
